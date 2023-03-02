@@ -10,7 +10,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path={PAGE_ROUTE.PAGE_A} element={<PageA />} />
           <Route path={PAGE_ROUTE.PAGE_B} element={<PageB />} />
-          <Route path={PAGE_ROUTE.PAGE_B} element={<PageC />} />
+          <Route path={PAGE_ROUTE.PAGE_C} element={<PageC />} />
         </Route>
         <Route path={PAGE_ROUTE.LOGIN} element={<Login />} />
       </Routes>
