@@ -1,5 +1,5 @@
-import { theme } from '@/styles';
 import { styled } from '@stitches/react';
+import { theme } from '@/styles';
 
 export const Header = styled('header', {
   width: '100%',
