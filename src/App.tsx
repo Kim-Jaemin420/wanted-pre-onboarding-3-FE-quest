@@ -1,17 +1,18 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Login, PageA, PageB, PageC } from './pages';
 import { MainLayout } from '@/components';
+import { PAGE_ROUTE } from './consts';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path="/pageA" element={<PageA />} />
-          <Route path="/pageB" element={<PageB />} />
-          <Route path="/pageC" element={<PageC />} />
+          <Route path={PAGE_ROUTE.PAGE_A} element={<PageA />} />
+          <Route path={PAGE_ROUTE.PAGE_B} element={<PageB />} />
+          <Route path={PAGE_ROUTE.PAGE_B} element={<PageC />} />
         </Route>
-        <Route path="/login" element={<Login />} />
+        <Route path={PAGE_ROUTE.LOGIN} element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
